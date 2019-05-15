@@ -1,0 +1,22 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rlam1217/Instanews-App.git"
+  },
+  "author": "Richard Lam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rlam1217/Instanews-App/issues"
+  },
+  "homepage": "https://github.com/Rlam1217/Instanews-App#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

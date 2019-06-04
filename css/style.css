@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: black;
     color: #ffffff;
     text-align: center;
@@ -11,7 +11,7 @@ header {
     margin: 0 auto;
     margin-bottom: 200px;
 
-}
+} */
 
 
 /* .article-container {
@@ -61,7 +61,7 @@ ul  {
 
 
 
-  .grid-container {
+  /* .grid-container {
     display: grid;
     height: 100vh;
     max-width: 480px;
@@ -69,12 +69,6 @@ ul  {
     margin: 0 auto;
     
   }
-
-
-  
-
-   
-
 
    .grid-container img {
     width: 480px; 
@@ -96,4 +90,4 @@ ul  {
     color: white;
     width: 480px;
     text-align: left;
-}
+} */

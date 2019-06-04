@@ -11,10 +11,9 @@
         "no-param-reassign": 1,
         "no-unused-vars": 1,
         "quotes": [ 1, "single"]
-      // our rules will go here...
     },
     "globals": {
-      // any globals we want to allow will go here
+      "$": true
     },
     "env": {
       "es6": true,

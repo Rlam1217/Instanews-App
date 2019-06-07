@@ -24,9 +24,37 @@ header {
         }
 
 
+        .small-header {
+            max-width: $max-width-mobile;
+            margin: 0 auto;
+            padding: 2rem 2rem 2rem 2rem;    
+                .logo{
+                    img {
+                         max-width: 150px;
+                         max-height: 150px; 
+                         margin: 1rem; }     
+                           }
+                h1 {
+                        margin-bottom: 1rem;}
+                select {
+                            border-radius: 5px;
+                            height: 30px; }   
+                        }                 
+
+
 .article-container {
     max-width: $max-width-mobile;
     margin: 0 auto;
+        .ajax-loader{
+            width: 38px;
+            height: 38px;
+            position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+        }
         li{
             position: relative;
             .article-image {
@@ -59,19 +87,53 @@ footer p {
 header {
     max-width: $max-width-tablet;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .logo{ 
+        img {max-width: 136px;
+            max-height: 136px; 
+            
+             margin: 1rem; }     
+               }
         .drop-down-menu {
-            position: relative;
+            justify-content: left;
                 select {
-                    position: absolute;
-                    top: 50%; }
+                        width: 130.7px;
+                     }
                         }
        }
 
-h1 {
-    position: relative;
-    top: 35%;
-    left: 35%;
+h1 { margin-bottom: 1rem;
+    
+    
 }
+
+
+
+.small-header {
+    
+    max-width: $max-width-tablet;
+    justify-content: left;
+    margin: 0 auto;
+    height: 10vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem 2rem 2rem 2rem;    
+        .logo{ padding-right: 35px;
+            img {max-width: 67px;
+                max-height: 67px; 
+                
+                 margin: 1rem; }     
+                   }
+        h1 {    text-align: left;
+                margin-bottom: 1rem;}
+        select {    
+                    border-radius: 5px;
+                    height: 30px; }   
+                }                
+
+
 
 .article-container {
     max-width: $max-width-tablet;
@@ -87,16 +149,51 @@ h1 {
         @include desktop {      
 
 
-header {
-    max-width: $max-width-desktop;
-    display: flex;
-    .drop-down-menu {
-        position: relative;
-            select {
-                position: absolute;
-                top: 50%; }
-                    }
-        }
+            header {
+                max-width: $max-width-desktop;
+                display: flex;
+                align-items: left;
+                justify-content: left;
+                
+                .logo{ 
+                    img {max-width: 220px;
+                        max-height: 220px; 
+                        
+                         margin: 1rem; }     
+                           }
+                    .drop-down-menu {
+                        justify-content: left;
+                            select {
+                                    width: 130.7px;
+                                 }
+                                    }
+                   }
+            
+            h1 { margin-bottom: 1rem;}
+
+
+            .small-header {
+    
+                max-width: $max-width-desktop;
+                justify-content: left;
+                margin-left: 0;
+                height: 10vh;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                padding: 2rem 2rem 2rem 2rem;    
+                    .logo{ padding-right: 35px;
+                        img {max-width: 67px;
+                            max-height: 67px; 
+                            
+                             margin: 1rem; }     
+                               }
+                    h1 {    text-align: left;
+                            margin-bottom: 1rem;}
+                    select {    
+                                border-radius: 5px;
+                                height: 30px; }   
+                            }                
+
 
 .article-container {
     max-width: $max-width-desktop; 

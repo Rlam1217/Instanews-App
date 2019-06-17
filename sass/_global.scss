@@ -1,1 +1,11 @@
-p {line-height: 2.5rem;}
+body {
+    background-color: $base-background-color;
+    height: 100vh;
+    color: $base-text-color;
+    font-size: $base-font-size;
+    text-align: center;
+    font-family: 'open_sanslight';
+    p {line-height: 1.5rem;
+       padding: .5rem .5rem .5rem .5rem;}
+
+}

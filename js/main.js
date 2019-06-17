@@ -41,15 +41,7 @@ $(function() {
 
                    $('.article-container ul').append('<li class="article-list" >' + url + image + p + '</a>' + '</li>');
                   
-                  //  $('.article-container ul').append('<li class="article-list" >' + '<a href="' + element.short_url + '">' + image + '<p>' + element.abstract + '</p>' + '</a>' + '</li>');
-
-                   // $(".article-container ul").append('<li>' + '<a href="' + element.short_url + '">' + img + '</a>' + '</li>');
                   
-                   //  $(".article-container ul").append('<li>' + '<a href="' + element.short_url + '">' + '<img src="' + element.multimedia[4].url + '">' + '<p>' + element.title + '</p>' + '</a>' + '</li>');
-                  
-                   // $('.article-container ul').append('<li>' + element.multimedia[1].caption + '</li>');
-
-                  //  element.title // fetches title 
                   
                      $count++;
                   }

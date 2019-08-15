@@ -10,8 +10,10 @@ header {
             border-radius: 5px;
             height: 30px;
              }  
-        h1 { margin-bottom: 1rem;
-             font-size: .8rem; }
+        h1 { 
+            margin-bottom: 1rem;
+            font-size: .8rem; 
+            }
 
         @include tablet {
             max-width: $max-width-tablet;
@@ -36,91 +38,94 @@ header {
                                 }
                }
 
-               @include desktop {
-                max-width: $max-width-desktop;
-                padding-top: 4vh;
-                padding-left: 1vw;
-                align-items: left;
-                justify-content: left;
-                .logo{ 
-                    padding-right: 5vw;
-                    img {max-width: 220px;
-                         max-height: 220px; 
-                         margin: 1rem; }     
-                           }
-
-                           .drop-down-menu {
-                            padding-bottom: 4vh;
-                            h1 {  font-size: $base-font-size; }
-                                        }           
-                    
+        @include desktop {
+            max-width: $max-width-desktop;
+            padding-top: 4vh;
+            padding-left: 1vw;
+            align-items: left;
+            justify-content: left;
+            .logo { 
+                padding-right: 5vw;
+                    img {
+                        max-width: 220px;
+                        max-height: 220px; 
+                        margin: 1rem; 
+                        }     
+                    }
+                    .drop-down-menu 
+                    {
+                        padding-bottom: 4vh;
+                        h1 {  
+                            font-size: $base-font-size; 
+                            }
+                    }           
                    }
         }
-
 
         .small-header {
             max-width: $max-width-mobile;
             margin: 0 auto;
             height: 49vh;
             padding-top: 5vh;
-                      
                 .logo{ 
                        transition-property: padding-right;
                        transition-duration: 2s;
                     img {
                          max-width: 150px;
                          max-height: 150px; 
-                         margin: 0rem; }     
+                         margin: 0rem; 
+                        }     
                            }
 
-                            @include tablet {
-                        
-                                max-width: $max-width-tablet;
-                                justify-content: left;
-                                height: 20vh;
-                                
-                                   
-                                    .logo{ 
-                                        padding-left: 13vw;
-                                        padding-bottom: 2vh;
-                                        padding-right: 12vw;
-                                        img {max-width: 67px;
-                                            max-height: 67px; 
-                                              }     
-                                               }
+            @include tablet {
+                max-width: $max-width-tablet;
+                justify-content: left;
+                height: 20vh; 
+                .logo { 
+                        padding-left: 13vw;
+                        padding-bottom: 2vh;
+                        padding-right: 12vw;
+                        img {
+                             max-width: 67px;
+                             max-height: 67px; 
+                            }     
+                        }
 
-                                               .drop-down-menu {
-                                                padding-bottom: 5vh;
-                                                            }     
+                .drop-down-menu {
+                                 padding-bottom: 5vh;
+                                }     
+                            h1 { 
+                                 text-align: left;
+                                }
+                                }
 
-                                    h1 { text-align: left;
-                                            }
-                                        }
-
-                                        @include desktop {
-                                            max-width: $max-width-desktop;
-                                            margin-left: 0;
-                                            height: 18vh;
-                                            .logo{ 
-                                                padding-left: 0vw;
-                                                padding-bottom: 3vh;
-                                                padding-right: 4.5vw;
-                                                img {max-width: 67px;
-                                                    max-height: 67px; 
+                @include desktop {
+                                  max-width: $max-width-desktop;
+                                  margin-left: 0;
+                                  height: 18vh;
+                                  .logo { 
+                                         padding-left: 0vw;
+                                         padding-bottom: 3vh;
+                                         padding-right: 4.5vw;
+                                         img {
+                                              max-width: 67px;
+                                              max-height: 67px; 
                                                       }     
                                                        }       
-                                                       .drop-down-menu {
-                                                        padding-bottom: 6vh;                                                            
-                                                                    }                                                
-                                                h1 { margin-bottom: 1rem;}      
-                                                        }    
-                            }
-
+                                 .drop-down-menu 
+                                                {
+                                                   padding-bottom: 6vh;                                                            
+                                                 }                                                
+                                                h1 { 
+                                                   margin-bottom: 1rem;
+                                                  }      
+                                                 }    
+                                  }
 
                 .article-container {
                     max-width: $max-width-mobile;
                     margin: 0 auto;
-                        .ajax-loader{
+                        .ajax-loader {
                             width: 38px;
                             height: 38px;
                             position: fixed;
@@ -129,14 +134,15 @@ header {
                             transform: translate(-50%, -50%);
                             z-index: 1;
                         }
-                        li{
+                        li {
                             position: relative;
                             .article-image {
                                 width: 100%;
                                 height: 420px;
                                 background-position: 50% 50%;
                                 background-repeat: no-repeat;
-                                background-size: cover; }                 
+                                background-size: cover; 
+                            }                 
                             p {
                                 position: absolute;
                                 bottom: .1px;
@@ -145,8 +151,10 @@ header {
                                 background: linear-gradient(
                                                  rgba(0,0,0, .5), 
                                                  rgba(0,0,0, .5));}
-                            a { color:#ffffff; 
-                                text-decoration:none; }
+                            a { 
+                                color:#ffffff; 
+                                text-decoration:none; 
+                            }
                           }
 
                           @include tablet {
@@ -154,16 +162,19 @@ header {
                                 ul {
                                     display: grid;
                                     grid-template-columns: 1fr 1fr 1fr;
-                                    grid-template-rows: 1fr 1fr 1fr 1fr; }
+                                    grid-template-rows: 1fr 1fr 1fr 1fr; 
+                                   }
                                         .article-image {
-                                            height: 100%; }  
+                                            height: 100%; 
+                                        }  
                                     }
 
-                                    @include desktop {
-                                        max-width: $max-width-desktop; 
-                                            ul {
-                                                grid-template-columns: 1fr 1fr 1fr 1fr;
-                                                grid-template-rows: 1fr 1fr 1fr; }
+                           @include desktop {
+                             max-width: $max-width-desktop; 
+                                 ul {
+                                     grid-template-columns: 1fr 1fr 1fr 1fr;
+                                     grid-template-rows: 1fr 1fr 1fr; 
+                                            }
                                                 } 
                                             }
                 
@@ -175,34 +186,22 @@ header {
                         p {
                             font-size: .9rem;
                             color: #c2c2c2;
-                            span { text-transform: uppercase; };
+                            span { 
+                                text-transform: uppercase; 
+                            }
                             
-
-
                         @include tablet {
                             max-width: $max-width-tablet;
                             height: 20vh;
                             padding-top: 9vh;
-
-                            
                         }
 
                         @include desktop {          
                             max-width: $max-width-desktop;
                            p {
                                font-size: 16px;
-                            text-align: left};
-                        
-                            
-                            
-
-                            }  
-
-
+                            text-align: left;
                         }
-
-                       
-
-                        
-
+                            }  
+                        }
                 }

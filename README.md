@@ -4,6 +4,9 @@
 This project makes use of the New York Times API to populate a website with 12 news articles. Each
 article on the website contains a picture, an abstract, and a link to the full article selected. It uses jQuery's AJAX function to retrieve and render content.
 
+![](assets/images/screenshot1.jpg)
+![](assets/images/screenshot2.jpg)
+
 ## Technologies Used
 
 * New York Times API

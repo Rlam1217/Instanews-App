@@ -161,8 +161,8 @@ header {
                             max-width: $max-width-tablet;
                                 ul {
                                     display: grid;
-                                    grid-template-columns: 1fr 1fr 1fr;
-                                    grid-template-rows: 1fr 1fr 1fr 1fr; 
+                                    grid-template-columns: 1fr 1fr;
+                                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
                                    }
                                         .article-image {
                                             height: 100%; 
@@ -189,19 +189,23 @@ header {
                             span { 
                                 text-transform: uppercase; 
                             }
-                            
+                        } 
                         @include tablet {
                             max-width: $max-width-tablet;
                             height: 20vh;
                             padding-top: 9vh;
+                            p {
+                                text-align: center;
+                                width: 100%;
+                            }
                         }
 
                         @include desktop {          
-                            max-width: $max-width-desktop;
                            p {
                                font-size: 16px;
-                            text-align: left;
+                               text-align: left;
+                               margin-left: 2rem;
                         }
                             }  
                         }
-                }
+                

@@ -19,7 +19,7 @@ $(function() {
              $(results).each(function(index, element) {
                   if (element.multimedia.length >= 5 && $count < 12) {
                   let image = '<div class="article-image" style="background-image:url(' + element.multimedia[4].url + ');">' + '</div>';
-                  let url = '<a href="' + element.url + '">';
+                  let url = '<a href="' + element.url + '" target="_blank">';
                   let p = '<p>' + element.abstract + '</p>';
                    $('.article-container ul').append('<li class="article-list" >' + url + image + p + '</a>' + '</li>');
                      $count++;
